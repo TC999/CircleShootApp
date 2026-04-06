@@ -12,3 +12,9 @@ jobs:
       - name: Build
         run: |
           ./build.bat
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zuma-deluxe-windows
+          path: build/source/CircleShoot/Zuma.exe
